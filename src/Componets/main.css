@@ -1,0 +1,228 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  position: fixed;
+  right: 0;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  padding: 60px 5px;
+}
+
+/* .first:hover,
+.second:hover,
+.third:hover {
+  cursor: pointer;
+} */
+
+.first,
+.second,
+.third {
+  color: #000;
+  font-size: 15px;
+  font-family: "Shantell Sans", cursive;
+}
+
+@keyframes moveAnimation {
+  0% {
+    left: 0px;
+    bottom: 600px;
+  }
+  25% {
+    left: 0px;
+    bottom: 0px;
+  }
+  50% {
+    left: 0px;
+    bottom: 0px;
+  }
+  75% {
+    left: 0px;
+    bottom: 0px;
+  }
+  100% {
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+.first {
+  position: relative;
+  animation-name: moveAnimation;
+  animation-duration: 5s;
+  background-color: #5ea3ec;
+  width: 60px;
+  height: 100%;
+}
+
+.first h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.first p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 65vh;
+  font-size: 20px;
+  transform: rotate(90deg);
+}
+
+.second {
+  position: relative;
+  animation-name: moveAnimation;
+  animation-duration: 4s;
+  background-color: #f64444;
+  min-width: 60px;
+  width: 60px;
+  height: 100%;
+}
+
+.second h4 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.second p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 65vh;
+  font-size: 20px;
+  transform: rotate(90deg);
+  /* position: absolute; */
+}
+
+.third {
+  position: relative;
+  animation-name: moveAnimation;
+  animation-duration: 3s;
+  background-color: #ffb400;
+  width: 60px;
+  height: 100%;
+}
+
+.third h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.third p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 65vh;
+  font-size: 20px;
+  transform: rotate(90deg);
+  /* position: absolute; */
+}
+
+.logo {
+  display: flex;
+  position: fixed;
+  margin: 50px 50px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  /* margin: 50px 55px; */
+  border: solid 2px black;
+  border-radius: 50%;
+  color: black;
+  overflow: hidden;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes SHOW-BOX {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes SHOW-BOX {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes SHOW-BOX {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes SHOW-BOX {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.food {
+  -webkit-animation: SHOW-BOX 2s;
+  -moz-animation: SHOW-BOX 2s;
+  -o-animation: SHOW-BOX 2s;
+  animation: SHOW-BOX 2s;
+}
+
+.foodPicture {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  -webkit-animation: SHOW-BOX 5s;
+  -moz-animation: SHOW-BOX 5s;
+  -o-animation: SHOW-BOX 5s;
+  animation: SHOW-BOX 5s;
+  border-radius: 5px;
+}
+
+.foodHeader {
+  -webkit-animation: SHOW-BOX 0.5s ease-in-out;
+  -moz-animation: SHOW-BOX 0.5s ease-in-out;
+  -o-animation: SHOW-BOX 0.5s ease-in-out;
+  animation: SHOW-BOX 0.5s ease-in-out;
+}
