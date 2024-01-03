@@ -136,7 +136,8 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 60px;
-  padding: 150px;
+  padding: 50px 0px;
+  margin: 0px 60px;
 }
 
 .marketEvents h1 {
@@ -147,8 +148,93 @@ img {
 }
 
 .marketEventCharacter {
-  font-size: 50px;
+  font-size: 5vw;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+.marketEventCharacterHeader {
+  /* font-size: 5vw; */
+  font-size: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-family: ogg, sans-serif;
+}
+
+.marketEventsDates {
+  /* border-top: 1px dashed black;
+  border-width: 10px; */
+
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+  background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+  background-size: 24px 1px, 24px 1px, 24px 1px, 24px 1px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  padding: 75px 0px 100px;
+  justify-content: center;
+  text-align: center;
+  margin: 15px 60px;
+}
+
+.dateEvent {
+  /* font-size: 1.5vw; */
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.event {
+  /* font-size: 2vw; */
+  font-size: 16px;
+  font-family: apercu mono, sans-serif;
+}
+
+.eventSection:hover {
+  cursor: pointer;
+}
+
+.eventSection {
+  display: grid;
+  align-content: center;
+}
+
+.eventSelectAll {
+  padding: 20px;
+  width: 180px;
+  position: relative;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #000;
+  transition: background 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  /* animation: .8s infinite normal c;
+    animation-timing-function: linear; */
+}
+
+.eventSelectAll:hover {
+  cursor: pointer;
+  color: #fff;
+  background: black;
+}
+
+.homeAdress {
+  padding: 90px 30px;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  /* animation: 0.4s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused; */
 }

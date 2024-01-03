@@ -334,7 +334,13 @@ export default function Main() {
           </div>
         </div>
       </div>
-      {hideMain && <MainPage />}
+      {hideMain && (
+        <MainPage
+          onPress3={handleClick3}
+          onPress2={handleClick2}
+          onPress={handleClick}
+        />
+      )}
       {showMain && ""}
     </div>
   );

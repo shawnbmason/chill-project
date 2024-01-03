@@ -1,11 +1,11 @@
 import "./mainPage.css";
 
-function MainPage() {
+const MainPage = ({ onPress3, onPress2, onPress }) => {
   const pictureOne =
     "https://images.prismic.io/canalstreetmarket/1d99cf0e3a0144c1229f92ee5b3c63b0eaae893c_home-hero.jpg?auto=compress,format";
   return (
-    <div>
-      <div className="mainPageBody">
+    <div className="mainPageBody">
+      <section>
         <div className="page">
           <h1>
             Canal Street Market is a carefully curated retail market, food hall
@@ -15,7 +15,9 @@ function MainPage() {
         </div>
 
         <img className="pagePicture" src={pictureOne} alt="business" />
+      </section>
 
+      <section>
         <div className="newMarket">
           <h1 className="newMarketHeader">A New Type of Market</h1>
           <div className="newMarketImages">
@@ -57,15 +59,50 @@ function MainPage() {
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="marketEvents">
-          <h1 className="marketEventCharacter">活動 </h1>
-          <h1> Market Events</h1>
-          <h1 className="marketEventCharacter"> 活動</h1>
+      <section>
+        <div>
+          <div className="marketEvents">
+            <h1 className="marketEventCharacter">活動 </h1>
+            <h1 className="marketEventCharacterHeader"> Market Events</h1>
+            <h1 className="marketEventCharacter"> 活動</h1>
+          </div>
+
+          <div className="marketEventsDates">
+            <div className="eventSection" onClick={onPress}>
+              <p className="dateEvent one">02/07</p>
+              <p className="event one">
+                New Ball x Paperboy Paris by Greenhouse @ Canal Street Market
+              </p>
+            </div>
+            <div className="eventSection" onClick={onPress2}>
+              <p className="dateEvent two">12/11</p>
+              <p className="event two">Hack City 12/11</p>
+            </div>
+            <div className="eventSection" onClick={onPress3}>
+              <p className="dateEvent three">07/27</p>
+              <p className="event three">Taiwanese Wave</p>
+            </div>
+          </div>
         </div>
-      </div>
+        <button className="eventSelectAll" onClick={onPress3}>
+          Select All
+        </button>
+      </section>
     </div>
   );
-}
+};
 
 export default MainPage;
+
+// const x = 2;
+// let y = 4;
+// function update(arg) {
+//   return Math.random() + y * arg;
+// }
+// y = 2;
+// y = 3;
+// const result = update(x);
+
+// console.log(result);
