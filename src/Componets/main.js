@@ -162,7 +162,7 @@ export default function Main() {
             // 👇 if(sectionAnimationLogo) { "50px" } else { "75px" }
             width: sectionAnimationLogo ? "50px" : "75px",
             height: sectionAnimationLogo ? "50px" : "75px",
-            left: sectionAnimationLogo ? "2px" : "35px",
+            left: sectionAnimationLogo ? "12px" : "35px",
             top: sectionAnimationLogo ? "55px" : "",
             margin: sectionAnimationLogo ? "0px" : "50px",
             fontSize: sectionAnimationLogo ? "20px" : "30px",
@@ -174,9 +174,12 @@ export default function Main() {
         <div
           style={{
             // backgroundColor: sectionAnimation ? "green" : "cornflowerblue",
+
             width: sectionAnimation ? "90vw" : "60px",
             transition: sectionAnimation ? "ease-in .2s" : "ease-in .2s",
             cursor: sectionAnimation ? "default" : "pointer",
+            overflowY: sectionAnimation ? "visible" : "hidden",
+            overflowX: "hidden",
           }}
           className="nav first"
           // onClick={handleClick}
@@ -197,8 +200,22 @@ export default function Main() {
             }}
           >
             {show && (
-              <div>
+              <div style={{ marginBottom: "75px" }}>
                 {" "}
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
                 <h1 className="food">The Food Hall</h1>{" "}
                 <div className="foodPicture"></div>
               </div>
@@ -209,9 +226,12 @@ export default function Main() {
         <div
           style={{
             // backgroundColor: sectionAnimation2 ? "green" : "#f64444",
+
             width: sectionAnimation2 ? "90vw" : "60px",
             transition: sectionAnimation2 ? "ease-in .2s" : "ease-in .2s",
             cursor: sectionAnimation2 ? "default" : "pointer",
+            overflowY: sectionAnimation2 ? "visible" : "hidden",
+            overflowX: "hidden",
           }}
           className="nav second"
           // onClick={handleClick2}
@@ -232,8 +252,24 @@ export default function Main() {
             }}
           >
             {show2 && (
-              <div>
+              <div style={{ marginBottom: "75px" }}>
                 {" "}
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
                 <h1 className="food">The Food Hall</h1>{" "}
                 <div className="foodPicture"></div>
               </div>
@@ -244,9 +280,12 @@ export default function Main() {
         <div
           style={{
             // backgroundColor: sectionAnimation3 ? "green" : "#ffb400",
+
             width: sectionAnimation3 ? "90vw" : "60px",
             transition: sectionAnimation3 ? "ease-in .2s" : "ease-in .2s",
             cursor: sectionAnimation3 ? "default" : "pointer",
+            overflowY: sectionAnimation3 ? "visible" : "hidden",
+            overflowX: "hidden",
           }}
           className="nav third"
           // onClick={handleClick3}
@@ -268,8 +307,26 @@ export default function Main() {
             }}
           >
             {show3 && (
-              <div>
+              <div style={{ marginBottom: "75px" }}>
                 {" "}
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
+                <h1 className="food">The Food Hall</h1>{" "}
+                <div className="foodPicture"></div>
                 <h1 className="food">The Food Hall</h1>{" "}
                 <div className="foodPicture"></div>
               </div>
