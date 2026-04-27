@@ -164,9 +164,9 @@ a {
   overflow: hidden;
 }
 
-.logo:hover {
+/* .logo:hover {
   cursor: pointer;
-}
+} */
 
 @-webkit-keyframes SHOW-BOX {
   0% {
@@ -220,6 +220,56 @@ a {
 }
 
 .foodHeader {
+  -webkit-animation: SHOW-BOX 0.5s ease-in-out;
+  -moz-animation: SHOW-BOX 0.5s ease-in-out;
+  -o-animation: SHOW-BOX 0.5s ease-in-out;
+  animation: SHOW-BOX 0.5s ease-in-out;
+}
+
+.Retail {
+  -webkit-animation: SHOW-BOX 2s;
+  -moz-animation: SHOW-BOX 2s;
+  -o-animation: SHOW-BOX 2s;
+  animation: SHOW-BOX 2s;
+}
+
+.RetailPicture {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  -webkit-animation: SHOW-BOX 5s;
+  -moz-animation: SHOW-BOX 5s;
+  -o-animation: SHOW-BOX 5s;
+  animation: SHOW-BOX 5s;
+  border-radius: 5px;
+}
+
+.RetailHeader {
+  -webkit-animation: SHOW-BOX 0.5s ease-in-out;
+  -moz-animation: SHOW-BOX 0.5s ease-in-out;
+  -o-animation: SHOW-BOX 0.5s ease-in-out;
+  animation: SHOW-BOX 0.5s ease-in-out;
+}
+
+.Community {
+  -webkit-animation: SHOW-BOX 2s;
+  -moz-animation: SHOW-BOX 2s;
+  -o-animation: SHOW-BOX 2s;
+  animation: SHOW-BOX 2s;
+}
+
+.CommunityPicture {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  -webkit-animation: SHOW-BOX 5s;
+  -moz-animation: SHOW-BOX 5s;
+  -o-animation: SHOW-BOX 5s;
+  animation: SHOW-BOX 5s;
+  border-radius: 5px;
+}
+
+.CommunityHeader {
   -webkit-animation: SHOW-BOX 0.5s ease-in-out;
   -moz-animation: SHOW-BOX 0.5s ease-in-out;
   -o-animation: SHOW-BOX 0.5s ease-in-out;

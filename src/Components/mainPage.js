@@ -1,10 +1,22 @@
-import "./mainPage.css";
+import "../Styles/mainPage.css";
+import { Link } from "react-router-dom";
+import AnimatedCursor from "react-animated-cursor";
 
 const MainPage = ({ onPress3, onPress2, onPress }) => {
   const pictureOne =
     "https://images.prismic.io/canalstreetmarket/1d99cf0e3a0144c1229f92ee5b3c63b0eaae893c_home-hero.jpg?auto=compress,format";
   return (
     <div className="mainPageBody">
+
+       <AnimatedCursor
+            innerSize={10}
+            outerSize={10}
+            color="129, 68, 77"
+            outerAlpha={0.2}
+            innerScale={0.7}
+            outerScale={5}
+          />
+
       <section>
         <div className="page">
           <h1>
@@ -90,6 +102,65 @@ const MainPage = ({ onPress3, onPress2, onPress }) => {
           Select All
         </button>
       </section>
+
+      <section>
+        <div className="homeSection">
+          <div className="homeAddressOne">
+            <h3>265 Canal St. New York, NY</h3>
+          </div>
+          <div className="homeAddressTwo">
+            <div className="homeMap"></div>
+          </div>{" "}
+        </div>
+      </section>
+
+      <section className="venderSection">
+        <div className="lines">
+          <></>{" "}
+        </div>
+        <div style={{ padding: "60px 0px" }}>
+          <h3>Interested in becoming a vender?</h3>
+          <button className="venderButton">Click Here</button>
+        </div>
+        <div className="lines">
+          <></>
+        </div>
+      </section>
+
+      <section>
+        <div className="social">
+          
+          <Link to="/email">
+            <h3>Email us</h3>
+          </Link>
+          
+          <a>
+            <h3>Follow us on facebook</h3>
+          </a>
+
+          <a>
+            <h3>Follow us on instagram</h3>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div className="newsletter">
+          <h1
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            Stay up to date with our newsletter
+          </h1>
+          <textarea placeholder="Email --->" />
+        </div>
+      </section>
+
+      <footer>
+        <h1 style={{ padding: "30px", fontSize: "15px" }}>Copyright@ 2024</h1>
+      </footer>
     </div>
   );
 };

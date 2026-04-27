@@ -1,7 +1,8 @@
-import "./main.css";
+import "../Styles/main.css";
 import React, { useState, useEffect, useRef } from "react";
 import autoAnimate from "@formkit/auto-animate";
 import MainPage from "./mainPage.js";
+import AnimatedCursor from "react-animated-cursor";
 // import { motion as m } from "framer-motion";
 
 export default function Main() {
@@ -155,6 +156,16 @@ export default function Main() {
   return (
     <div>
       <div className="wrapper" ref={parent}>
+
+        <AnimatedCursor
+            innerSize={10}
+            outerSize={10}
+            color="229, 177, 0"
+            outerAlpha={0.2}
+            innerScale={0.7}
+            outerScale={5}
+          />
+
         <div
           onClick={handleClickMain}
           className="logo"
@@ -177,7 +188,7 @@ export default function Main() {
 
             width: sectionAnimation ? "90vw" : "60px",
             transition: sectionAnimation ? "ease-in .2s" : "ease-in .2s",
-            cursor: sectionAnimation ? "default" : "pointer",
+            // cursor: sectionAnimation ? "default" : "pointer",
             overflowY: sectionAnimation ? "visible" : "hidden",
             overflowX: "hidden",
           }}
@@ -229,7 +240,7 @@ export default function Main() {
 
             width: sectionAnimation2 ? "90vw" : "60px",
             transition: sectionAnimation2 ? "ease-in .2s" : "ease-in .2s",
-            cursor: sectionAnimation2 ? "default" : "pointer",
+            // cursor: sectionAnimation2 ? "default" : "pointer",
             overflowY: sectionAnimation2 ? "visible" : "hidden",
             overflowX: "hidden",
           }}
@@ -283,7 +294,7 @@ export default function Main() {
 
             width: sectionAnimation3 ? "90vw" : "60px",
             transition: sectionAnimation3 ? "ease-in .2s" : "ease-in .2s",
-            cursor: sectionAnimation3 ? "default" : "pointer",
+            // cursor: sectionAnimation3 ? "default" : "pointer",
             overflowY: sectionAnimation3 ? "visible" : "hidden",
             overflowX: "hidden",
           }}

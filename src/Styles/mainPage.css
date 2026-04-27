@@ -1,0 +1,495 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.mainPageBody {
+  width: calc(100% - 180px);
+}
+
+.page {
+  height: 100%;
+  animation: fadeInAnimation ease-in;
+  animation-duration: 2s;
+  display: grid;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  /* width: 80vw; */
+  max-width: 1030px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.page h1 {
+  font-family: Caveat, sans-serif;
+  padding: 250px 60px 120px;
+  font-size: 75px;
+  line-height: 86px;
+  font-weight: 400;
+  color: #000;
+}
+
+img {
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+/* ???????????????????????????????????????????????????? */
+
+@keyframes c {
+  0% {
+    background-position-x: 0, 2px;
+  }
+
+  100% {
+    background-position-x: 17px, 19px;
+  }
+}
+
+.page h1 a {
+  animation: 0.8s infinite normal c;
+  animation-timing-function: linear;
+  padding-bottom: 4px;
+  background-image: repeating-linear-gradient(
+      -45deg,
+      #ffb400,
+      #ffb400 1px,
+      transparent 0,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #ffb400,
+      #ffb400 1px,
+      transparent 0,
+      transparent 12.2px
+    );
+  background-position: 0 103%, 2px 103%;
+  background-size: 17px 10px;
+  background-repeat: repeat-x;
+
+  text-decoration: none;
+  color: #000;
+}
+
+.pagePicture {
+  background: transparent no-repeat center;
+  background-size: cover;
+}
+
+.newMarket {
+  display: grid;
+  justify-content: center;
+  text-align: left;
+  padding: 60px;
+}
+
+.newMarketHeader {
+  font-family: ogg, sans-serif;
+  font-size: 113px;
+  margin-bottom: 60px;
+  max-width: 645px;
+  font-weight: 400;
+}
+
+.newMarketImages {
+  display: grid;
+  /* -ms-grid-columns: (1fr)[3]; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+}
+
+.newMarketImages p {
+  font-family: apercu mono, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.newMarketImages img {
+  margin-bottom: 30px;
+}
+
+.marketEvents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  padding: 50px 0px;
+  margin: 0px 60px;
+}
+
+.marketEvents h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.marketEventCharacter {
+  font-size: 5vw;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.marketEventCharacterHeader {
+  /* font-size: 5vw; */
+  font-size: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-family: ogg, sans-serif;
+}
+
+@keyframes b {
+  0% {
+    background-position-x: 0, 0px;
+  }
+
+  100% {
+    background-position-x: 24px, -24px;
+  }
+}
+
+.marketEventsDates {
+  animation: 0.8s infinite normal b;
+  animation-timing-function: linear;
+
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+  background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+  background-size: 24px 1px, 24px 1px, 24px 1px, 24px 1px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  padding: 75px 0px 100px;
+  justify-content: center;
+  text-align: center;
+  margin: 15px 60px;
+}
+
+.dateEvent {
+  /* font-size: 1.5vw; */
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.event {
+  /* font-size: 2vw; */
+  font-size: 16px;
+  font-family: apercu mono, sans-serif;
+}
+
+.eventSection:hover {
+  /* cursor: pointer; */
+}
+
+.eventSection {
+  display: grid;
+  align-content: center;
+}
+
+.eventSelectAll {
+  padding: 20px;
+  width: 180px;
+  position: relative;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #000;
+  transition: background 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.eventSelectAll:hover {
+  /* cursor: pointer; */
+  color: #fff;
+  background: black;
+}
+
+@keyframes a {
+  0% {
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+  }
+  100% {
+    background-position: 30px 0, -30px 100%, 0 -30px, 100% 30px;
+  }
+}
+
+.homeAddressOne {
+  padding: 90px 30px;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  /* animation: 0.4s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: grid;
+
+  animation: 0.8s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.homeAddressOne h3 {
+  font-family: ogg, sans-serif;
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  max-width: 385px;
+  margin: 0 auto;
+}
+
+.homeAddressTwo {
+  padding: 1px;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  /* animation: 0.4s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused; */
+
+  animation: 0.8s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.homeAddressOne:hover,
+.homeAddressTwo:hover {
+  /* cursor: pointer; */
+  animation-play-state: running;
+}
+
+.homeSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 60px;
+  padding: 75px 0px 50px;
+  justify-content: center;
+  text-align: center;
+  margin: 15px 60px;
+}
+
+.homeMap {
+  background-image: url("https://images.prismic.io/canalstreetmarket/74921c6bf0abf767666c52a6af3c001c58643587_group-11.jpg?auto=compress,format");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.venderSection {
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.venderSection h3 {
+  font-family: ogg, sans-serif;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.lines {
+  background-image: repeating-linear-gradient(
+      -74deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 0,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      -74deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 0,
+      transparent 4px
+    );
+  background-position: 0 0, 0 100%;
+  background-size: 100% 12px, 100% 12px;
+
+  height: 10px;
+  width: 100%;
+}
+
+.venderButton {
+  padding: 20px;
+  width: 180px;
+  background: #fff;
+  border: 1px solid #000;
+  transition: background 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.venderButton:hover {
+  /* cursor: pointer; */
+  color: #fff;
+  background: black;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social a {
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  height: 100%;
+  font-size: 15px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 40px;
+
+  animation: 0.8s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.social a:hover {
+  /* cursor: pointer; */
+  animation-play-state: running;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 60px;
+  margin: 0px 60px;
+  padding: 30px 60px;
+  font-family: apercu mono, sans-serif;
+
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+
+  animation: 0.8s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.newsletter:hover {
+  animation-play-state: running;
+}
+
+.newsletter textarea {
+  height: 50px;
+  resize: none;
+  border: 1px solid black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.newsletter textarea::placeholder {
+  color: black;
+}
+
+
+.mobileNav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.hamburger {
+  font-size: 30px;
+  background: white;
+  border: none;
+  /* cursor: pointer; */
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.dropdownMenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdownMenu button {
+  padding: 15px 25px;
+  border: none;
+  background: white;
+  /* cursor: pointer; */
+  text-align: left;
+}
+
+.dropdownMenu button:hover {
+  background: #eee;
+}
+

@@ -1,0 +1,251 @@
+.emailContainer {
+  cursor: none;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top left, rgba(255, 180, 0, 0.22), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(94, 163, 236, 0.22), transparent 35%),
+    linear-gradient(135deg, #1b1740, #392f9a);
+}
+
+.emailContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 140%;
+  height: 120px;
+
+  background:
+    radial-gradient(circle, #ff4d4d 0 14px, transparent 15px),
+    radial-gradient(circle, #ffd166 0 12px, transparent 13px),
+    radial-gradient(circle, #ff4d4d 0 14px, transparent 15px),
+    radial-gradient(circle, #ffd166 0 12px, transparent 13px);
+
+  background-size: 160px 80px;
+  background-position: 0 30px, 80px 50px, 160px 30px, 240px 50px;
+
+  opacity: 0.8;
+  animation: lanternMove 12s linear infinite;
+}
+
+/* glowing effect */
+.emailContainer::before {
+  filter: drop-shadow(0 0 10px rgba(255, 80, 80, 0.6));
+}
+
+.emailContainer::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 20%;
+  width: 200px;
+  height: 200px;
+
+  background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+  filter: blur(20px);
+  animation: steamFloat 6s ease-in-out infinite;
+}
+
+.emailHeader {
+  justify-content: center;
+  position: absolute;
+  display: grid;
+  gap: 14px;
+  width: 600px;
+  height: 500px;
+  padding: 28px;
+  border-radius: 18px;
+
+  background: rgba(23, 20, 55, 0.92);
+  border: 1px solid rgba(255, 180, 0, 0.35);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+
+  -webkit-animation: slideIn 1.2s forwards;
+  -moz-animation: slideIn 1.2s forwards;
+  animation: slideIn 1.2s forwards;
+}
+
+.emailHeader .contactMe {
+  color: #ffb400;
+  opacity: 1;
+  margin: 0;
+  padding-top: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.emailHeader h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.email,
+.phone,
+.name,
+.message {
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  width: 400px;
+  background-color: rgba(94, 163, 236, 0.12);
+  border: 1px solid rgba(94, 163, 236, 0.35);
+  padding: 12px 15px;
+  font-size: 18px;
+  transition: 0.25s ease;
+  box-shadow: none;
+}
+
+.email,
+.phone,
+.name {
+  height: 40px;
+}
+
+.message {
+  resize: none;
+  overflow: auto;
+  height: 100px;
+}
+
+.email:focus,
+.phone:focus,
+.name:focus,
+.message:focus {
+  border-color: #5ea3ec;
+  background-color: rgba(94, 163, 236, 0.18);
+  box-shadow: 0 0 0 4px rgba(94, 163, 236, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.sendMessageButton {
+  margin-bottom: 25px;
+  margin-right: 28px;
+  background: #ffb400;
+  width: 110px;
+  height: 42px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 0;
+  font-weight: 800;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #171437;
+  transition: 0.25s ease;
+  text-transform: uppercase;
+  box-shadow: 0 10px 25px rgba(255, 180, 0, 0.25);
+}
+
+.sendMessageButton:hover {
+  transform: translateY(-2px) scale(1.05);
+  cursor: pointer;
+  background: #f64444;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(246, 68, 68, 0.3);
+}
+
+.nextArrowemail {
+  position: absolute;
+  left: 0;
+  color: #ffb400;
+  font-size: 50px;
+  margin: 20px;
+  transition: 0.25s ease;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  margin: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.emailAddress {
+  font-size: 10pt;
+  color: #5ea3ec;
+}
+
+.ohemailPage {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 7px;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+.ohemailPage:hover {
+  cursor: help;
+  color: #ffb400;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(900px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .emailAddress {
+    font-size: 7pt;
+  }
+
+  .emailHeader {
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 450px;
+    padding: 22px;
+  }
+
+  .emailHeader h2 {
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .contactInfo {
+    font-size: 6px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .message,
+  .email,
+  .phone,
+  .name {
+    width: 250px;
+  }
+
+  .sendMessageButton {
+    right: 50%;
+    transform: translateX(50%);
+    margin-right: 0;
+  }
+
+  .sendMessageButton:hover {
+    transform: translateX(50%) scale(1.05);
+  }
+}
