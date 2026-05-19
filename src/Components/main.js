@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import autoAnimate from "@formkit/auto-animate";
 import MainPage from "./mainPage.js";
 import AnimatedCursor from "react-animated-cursor";
+import ShoppingSidebar from "./shoppingSidebar.js";
 // import { motion as m } from "framer-motion";
 
 export default function Main() {
@@ -186,7 +187,7 @@ export default function Main() {
           style={{
             // backgroundColor: sectionAnimation ? "green" : "cornflowerblue",
 
-            width: sectionAnimation ? "90vw" : "60px",
+            width: sectionAnimation ? "clamp(300px, 90vw, 82vw)" : "60px",
             transition: sectionAnimation ? "ease-in .2s" : "ease-in .2s",
             // cursor: sectionAnimation ? "default" : "pointer",
             overflowY: sectionAnimation ? "visible" : "hidden",
@@ -212,23 +213,9 @@ export default function Main() {
           >
             {show && (
               <div style={{ marginBottom: "75px" }}>
-                {" "}
-                <h1 className="food">The Food Hall</h1>{" "}
-                <div className="foodPicture"></div>
-                <h1 className="food">The Food Hall</h1>{" "}
-                <div className="foodPicture"></div>
-                <h1 className="food">The Food Hall</h1>{" "}
-                <div className="foodPicture"></div>
-                <h1 className="food">The Food Hall</h1>{" "}
-                <div className="foodPicture"></div>
-                <h1 className="food">The Food Hall</h1>{" "}
-                <div className="foodPicture"></div>
-                <h1 className="food">The Food Hall</h1>{" "}
-                <div className="foodPicture"></div>
-                <h1 className="food">The Food Hall</h1>{" "}
-                <div className="foodPicture"></div>
-                <h1 className="food">The Food Hall</h1>{" "}
-                <div className="foodPicture"></div>
+                
+                <ShoppingSidebar />
+      
               </div>
             )}
           </div>
@@ -238,7 +225,7 @@ export default function Main() {
           style={{
             // backgroundColor: sectionAnimation2 ? "green" : "#f64444",
 
-            width: sectionAnimation2 ? "90vw" : "60px",
+            width: sectionAnimation2 ? "clamp(300px, 82vw, 90vw)" : "60px",
             transition: sectionAnimation2 ? "ease-in .2s" : "ease-in .2s",
             // cursor: sectionAnimation2 ? "default" : "pointer",
             overflowY: sectionAnimation2 ? "visible" : "hidden",
@@ -292,7 +279,7 @@ export default function Main() {
           style={{
             // backgroundColor: sectionAnimation3 ? "green" : "#ffb400",
 
-            width: sectionAnimation3 ? "90vw" : "60px",
+            width: sectionAnimation3 ? "clamp(300px, 82vw, 90vw)" : "60px",
             transition: sectionAnimation3 ? "ease-in .2s" : "ease-in .2s",
             // cursor: sectionAnimation3 ? "default" : "pointer",
             overflowY: sectionAnimation3 ? "visible" : "hidden",
